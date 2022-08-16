@@ -26,8 +26,7 @@ Cuando el usuario haga click sobre una noticia, la misma deberá de abrirse en u
 
 ## Requerimientos de Lista de Noticias
 
- Sobre el listado se debe de realizar: Mostrar la leyenda: Está viendo 10 noticias de {totalResults} resultados 
- Paginación, donde se presenten 10 noticias por vez.
+ Sobre el listado se debe de realizar: Paginación, donde se presenten 10 noticias por vez.
  Lo importante es que se vean **10 noticias por página**.
 
 ## Servicio

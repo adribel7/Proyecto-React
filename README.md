@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Proyecto de React 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+El proyecto Final del curso de **React del INFORMATORIO 2022** trata de la realización de un **Buscador de Noticias** en nuestro caso, solamente de entretenimiento.
 
-## Available Scripts
+## Condiciones Generales
 
-In the project directory, you can run:
+● El buscador debe estar disponible ya sea en la raíz (http://localhost) o en la ruta/buscador (http://localhost/buscador).
+● En caso de que el usuario ingrese en una url inválida, se debe presentar una página de 404, con el mensaje recurso no encontrado, con los estilos apropiados.
+● El proyecto debe contener mínimo 1 prueba unitaria.
 
-### `npm start`
+## Detalles de la búsqueda
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+● No se debe realizar la búsqueda a menos que el usuario haya escrito al menos 3 caracteres 
+● El botón buscar se debe habilitar cuando el input cumpla con la condición anterior.
+● Se deberá presentar un spinner/loading para que el usuario sepa de que se está realizando un procesamiento.
+● En caso de que no haya resultados, se deberá presentar un mensaje adecuado, que indique que no hay resultados para la búsqueda. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Obtenida la respuesta del servicio
 
-### `npm test`
+Se deberá presenta una interfaz con los resultados obtenidos. 
+Por cada noticia obtenida, se presenta : 
+● El título de la noticia 
+● La imagen de portada de la noticia 
+● La fecha de publicación de la noticia en formato:dd-mm-aaaa - hh:mm hs. Ejemplo: Publicado el: 28-06-2022 a las 03:00 hs. 
+● Cuando el usuario haga click sobre una noticia, la misma deberá de abrirse en una nueva pestaña.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requerimientos de Lista de Noticias
 
-### `npm run build`
+ ● Sobre el listado se debe de realizar ○ Mostrar la leyenda: Está viendo 10 noticias de {totalResults} resultados 
+ ●Paginación, donde se presenten 10 noticias por vez, 
+ ●Lo importante es que se vean **10 noticias por página**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Servicio
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para poder realizar este proyecto, nos registramos en **https://newsapi.org/**. Al obtener la apikey, tuvimos disponible un endpoint, que nos permitió realizar la búsqueda de noticias. 
+La información de los parámetros requeridos por el endpoint lo encontramos en: **https://newsdata.io/docs**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##

@@ -1,0 +1,14 @@
+.lista-noticias {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    flex-wrap:wrap;
+}
+.lista-noticias > div {
+    margin: 5px;
+    width: 200px;
+    
+}
+
+
+
